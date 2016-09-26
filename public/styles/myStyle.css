@@ -1,0 +1,132 @@
+body{
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 0px;
+  margin: 10px;
+  overflow-x: hidden;
+  background-color: #a5c5cd;
+}
+.container {
+    display: table;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+    border-spacing: 10px 3px;
+    border-collapse: separate;
+    width: 100%;
+}
+.divCont {
+    background: rgba(0, 67, 84, 0.7);
+    color: #FFF;
+    width: 48%;
+    margin: 0;
+    display: table-cell;
+}
+.divCont p {
+    padding: 10px;
+    margin: 0;
+}
+.shadow {
+  box-shadow: 5px 5px 3px #888888;
+  border-radius: 5px;
+}
+.backdrop{
+  background: rgba(0, 67, 84, 0.7);
+}
+
+a {
+    display: table-cell;
+    background: #2CB32C;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 4px 0;
+    text-align: center;
+}
+.show-small { display: none; }
+
+@media screen and (max-width: 845px) {
+    .container { display: block; }
+    div > .divCont {
+        display: block;
+        width: 100%;
+    }
+    a { border-radius: 0; }
+    .show-small { display: block; }
+    .hide-small { display: none; }
+
+}
+
+@media screen and (min-width: 845px) {
+  .ui-widget {
+    padding: 10px;
+  }
+}
+
+.demoHeaders {
+  margin-top: 2em;
+}
+#dialog-link {
+  padding: .4em 1em .4em 20px;
+  text-decoration: none;
+  position: relative;
+}
+#dialog-link span.ui-icon {
+  margin: 0 5px 0 0;
+  position: absolute;
+  left: .2em;
+  top: 50%;
+  margin-top: -8px;
+}
+#icons {
+  margin: 0;
+  padding: 0;
+}
+#icons li {
+  margin: 2px;
+  position: relative;
+  padding: 4px 0;
+  cursor: pointer;
+  float: left;
+  list-style: none;
+}
+#icons span.ui-icon {
+  float: left;
+  margin: 0 4px;
+}
+.fakewindowcontain .ui-widget-overlay {
+  position: absolute;
+}
+select {
+  width: 200px;
+}
+
+#timerBtn {
+  color: green;
+}
+
+.cover {
+  background: url("/public/images/cover.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 320px;
+}
+.animColor {
+  animation: example infinite;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  0% {
+      color: red;
+  }
+  50% {
+      color: #8f0000;
+  }
+  100% {
+      color: red;
+  }
+}
