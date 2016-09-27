@@ -12,6 +12,8 @@ body{
     border-spacing: 10px 3px;
     border-collapse: separate;
     width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
 }
 .divCont {
     background: rgba(0, 67, 84, 0.7);
